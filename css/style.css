@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.active {
+background-color: palevioletred !important;
+}
+
+.hidden {
+    display: none !important; 
+}
+
+.game-area {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.player-0-panel, .player-1-panel {
+    
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.player-0-panel, .pcb-0, .player-1-panel, .pcb-1{
+    background-color: pink;
+}
+
+.player-name, .player-score, .player-name {
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.playerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-current-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 132px;
+    height: 85px;
+    align-items: center;
+    margin-bottom: 140px;
+}
+
+.player-current-label {
+    margin-bottom: 5px;
+}
+
+.player-current-score {
+    font-size: 34px;
+}
+
+.player-stuff {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+img {
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background: none;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+i {
+    margin-right: 7px;
+}
+
+input {
+    background: none;
+    border: 1px solid black;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width: 865px) {
+    .player-name {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
